@@ -1,6 +1,4 @@
 {
-  "cleanUrls": true,
-  "routes": [
-    { "src": "/(.*)", "dest": "/$1" }
-  ]
+  "buildCommand": "echo Static build ready",
+  "outputDirectory": "."
 }
