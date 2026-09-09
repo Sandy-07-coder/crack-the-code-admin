@@ -9,7 +9,7 @@ const db = require('./db');
 const { generateChallengeSets, fallbackSets } = require('./gemini');
 const { scoreSubmission } = require('./scoring');
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4005;
 const ADMIN_KEY = process.env.ADMIN_KEY || 'admin123'; // change in .env for real events
 const ROUND_DURATION_MS = () => (db.get('event.roundDurationMinutes').value() || 30) * 60 * 1000;
 
