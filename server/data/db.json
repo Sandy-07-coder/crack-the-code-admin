@@ -1,0 +1,40 @@
+{
+  "teams": [
+    {
+      "id": "aamfwXh7",
+      "name": "admin123",
+      "token": "DUFDdK4EeUgbw-nmFqxGQwiJ",
+      "joinedAt": 1788970880963
+    }
+  ],
+  "sets": [],
+  "event": {
+    "activeSetId": null,
+    "roundDurationMinutes": 30,
+    "currentRound": 0,
+    "rounds": {
+      "1": {
+        "released": false,
+        "startTime": null,
+        "endTime": null
+      },
+      "2": {
+        "released": false,
+        "startTime": null,
+        "endTime": null
+      },
+      "3": {
+        "released": false,
+        "startTime": null,
+        "endTime": null
+      },
+      "4": {
+        "released": false,
+        "startTime": null,
+        "endTime": null
+      }
+    }
+  },
+  "submissions": [],
+  "manualAdjustments": []
+}

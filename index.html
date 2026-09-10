@@ -1,107 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Crack the Code — Admin Console</title>
-<link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div id="app">
-
-    <!-- LOGIN -->
-    <section id="screen-login" class="screen active">
-      <div class="card">
-        <h1>🛠️ Admin Console</h1>
-        <p class="sub">Crack the Code — Event Control Panel</p>
-        <input id="admin-key-input" type="password" placeholder="Admin key" />
-        <div id="login-error" class="error"></div>
-        <button id="login-btn">Log In</button>
-      </div>
-    </section>
-
-    <!-- DASHBOARD -->
-    <section id="screen-dashboard" class="screen">
-      <div class="dashboard">
-
-        <header class="topbar">
-          <h1>🔐 CRACK THE CODE — Admin</h1>
-          <button id="reset-btn" class="danger-btn">Reset Event</button>
-        </header>
-
-        <div class="grid">
-
-          <!-- Challenge Set Generation -->
-          <div class="panel">
-            <h3>1. Generate Challenge Sets</h3>
-            <p class="muted">Generates 5 distinct challenge sets (Rounds 1, 2 & 4) using Gemini. Leave the API key blank to use offline sample sets instead.</p>
-            <input id="gemini-key-input" type="password" placeholder="Gemini API key (optional)" />
-            <button id="generate-sets-btn">Generate 5 Sets</button>
-            <div id="generate-status" class="status"></div>
-            <div id="sets-list" class="sets-list"></div>
-          </div>
-
-          <!-- Set Selection & Duration -->
-          <div class="panel">
-            <h3>2. Select Active Set &amp; Timer</h3>
-            <select id="set-select"><option value="">-- choose a generated set --</option></select>
-            <button id="select-set-btn">Use This Set</button>
-            <div id="active-set-status" class="status"></div>
-            <hr/>
-            <label class="muted">Round duration (minutes)</label>
-            <input id="duration-input" type="number" value="30" min="1" />
-            <button id="set-duration-btn">Update Duration</button>
-          </div>
-
-          <!-- Round Control -->
-          <div class="panel wide">
-            <h3>3. Round Control</h3>
-            <div class="round-controls" id="round-controls"></div>
-          </div>
-
-          <!-- Teams -->
-          <div class="panel">
-            <h3>Teams Joined <span id="team-count" class="pill">0</span></h3>
-            <p class="muted">Only visible to you — participants can't see this list.</p>
-            <ul id="teams-list" class="teams-list"></ul>
-          </div>
-
-          <!-- Manual Scoring (Rival Zone) -->
-          <div class="panel">
-            <h3>⚔️ Manual Scoring — Rival Zone</h3>
-            <p class="muted">Award or deduct points live during Round 3 (Shield / Scanner / Boost / Trap).</p>
-            <select id="manual-team-select"></select>
-            <select id="manual-round-select">
-              <option value="3">Round 3 — Rival Zone</option>
-              <option value="1">Round 1</option>
-              <option value="2">Round 2</option>
-              <option value="4">Round 4</option>
-            </select>
-            <input id="manual-points-input" type="number" placeholder="Points (+/-)" value="10" />
-            <input id="manual-reason-input" type="text" placeholder="Reason (e.g. Shield used)" />
-            <button id="manual-award-btn">Award Points</button>
-            <div id="manual-status" class="status"></div>
-          </div>
-
-          <!-- Leaderboard -->
-          <div class="panel wide">
-            <h3>🏆 Live Leaderboard</h3>
-            <table id="leaderboard-table">
-              <thead>
-                <tr><th>#</th><th>Team</th><th>R1</th><th>R2</th><th>R3</th><th>R4</th><th>Total</th><th>Total Time</th></tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </div>
-
-  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
-  <script src="config.js"></script>
-  <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>temp-react</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
