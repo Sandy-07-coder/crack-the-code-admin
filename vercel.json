@@ -1,4 +1,10 @@
 {
-  "buildCommand": "echo Static build ready",
-  "outputDirectory": "."
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
